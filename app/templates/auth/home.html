@@ -1,0 +1,31 @@
+{% extends 'layouts/auth.base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="card fat">
+    <div class="card-body">
+        <h4 class="card-title">Login with user credentials</h4>
+
+        <p class="h6">Administrator</p>
+        <p>E-mail address: admin@tickette.com</p>
+        <p>Password: admindemo</p>
+
+        <div class="clear-fix"></div>
+        <hr>
+
+        <p class="h6">Agent</p>
+        <p>E-mail address: agent@tickette.com</p>
+        <p>Password: agentdemo</p>
+
+        <div class="clear-fix"></div>
+        <hr>
+
+        <p class="h6">Customer</p>
+        <p>E-mail address: customer@tickette.com</p>
+        <p>Password: customerdemo</p>
+
+        <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-block">Go to demo</a>
+    </div>
+</div>
+
+{% endblock %}
