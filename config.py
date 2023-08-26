@@ -28,4 +28,4 @@ class DevelopmentConfig(BaseConfig):
 
 class ProductionConfig(BaseConfig):
 	DEBUG = False
-	SQLALCHEMY_DATABASE_URI = 'postgresql://pnzzqvamgfmnvk:3d64fa63c6c9adcf8dd6add1ae9658e7a05b06b70cd7c39f249d21110942bcca@ec2-34-231-177-125.compute-1.amazonaws.com:5432/dofaq6qsav20s'
+	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
